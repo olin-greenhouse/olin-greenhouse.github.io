@@ -1,0 +1,16 @@
+@font-face {
+font-family: "DINOT-Bold";
+src: url("css/fonts/DINOT-Bold.otf");
+}
+
+h1 {
+	font-family: "DINOT-Bold";
+	font-size: 50px;
+	padding-top: 2%;
+	text-align: center;
+	color: #ffffff;
+}
+
+body {
+	background-color: #00a99d;
+}
