@@ -17,7 +17,6 @@ function draw() {
   let y = floor(random(windowHeight));
 
   let pollenpicker = int(random(0,4));
-  print('The value of x is ' + pollenpicker);
 
   let resize = random(2,7);
   if (pollenpicker === 1){
