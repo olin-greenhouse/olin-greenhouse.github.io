@@ -1,18 +1,17 @@
 let img; // Declare variable 'img'.
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  let pollen_canvas = createCanvas(windowWidth, windowHeight);
+  pollen_canvas.position(0,0);
   trianglepollen = loadImage('images/trianglepollen.png'); // Load the image
   yellowpollen = loadImage('images/yellowpollen.png'); // Load the image
   greenpollen = loadImage('images/greenpollen.png'); // Load the image
   spikepollen = loadImage('images/spikepollen.png'); //Load the image
+
 }
 
 function draw() {
-  // Call the variableEllipse() method and send it the
-  // parameters for the current mouse position
-  // and the previous mouse position
-  //variableEllipse(mouseX, mouseY, pmouseX, pmouseY);
+  //Drawing the pollen pieces randomly across the screen
   let x = floor(random(windowWidth));
   let y = floor(random(windowHeight));
 
@@ -30,7 +29,7 @@ function draw() {
     image(greenpollen, x, y, greenpollen.width / resize, greenpollen.height / resize);
   } else {
     rotate(random(0,6.25));
-    image(spikepollen, x, y, spikepollen.width / (resize+2), spikepollen.height / (resize+2));
+    image(spikepollen, x, y, spikepollen.width / (resize+4), spikepollen.height / (resize+4));
   }
 
 	//imageDrawing(mouseX, mouseY, pmouseX, pmouseY);
